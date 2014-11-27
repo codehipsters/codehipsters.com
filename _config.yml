@@ -1,0 +1,12 @@
+# Site settings
+title: Code Hipsters
+email:
+description: >
+  Code Hipsters — это квинтэссенция людей и технологий, призванная разрушать стереотипы.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://codehipsters.com" # the base hostname & protocol for your site
+twitter_username:
+github_username: codehipsters
+
+# Build settings
+markdown: kramdown

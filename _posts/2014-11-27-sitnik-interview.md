@@ -1,3 +1,7 @@
+---
+layout: post
+title: Андрей Ситник о пост-процессинге CSS
+---
 Всем привет! Редакция [Code Hipsters](https://vk.com/codehipsters) поговорила с фронтендером [Evil Martians](https://evilmartians.com/) и автором [PostCSS](https://github.com/postCSS/postCSS) [Андреем Ситником](http://sitnik.ru/) о пре- и пост-процессинге CSS, трендах фронтент-разработки и планах на будущее.
 
 **Code Hipsters:** Добрый день, Андрей! Если коротко, то зачем пересобирать CSS-ки? Все же давно и надолго Sass и Less радуются.
