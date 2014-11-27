@@ -71,6 +71,16 @@ $on-laptop:        800px;
       font-family: 'Fira Sans';
     }
   }
+
+  .post-link:hover {
+    color: white;
+    background-color: #ee6e83;
+    text-decoration: none;
+  }
+
+  li {
+    text-align: center;
+  }
 }
 
 .post-content {
