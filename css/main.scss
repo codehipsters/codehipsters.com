@@ -50,3 +50,36 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+.home {
+  .intro-container {
+    text-align: center;
+    margin-bottom: 55px;
+    h1 {
+      margin-top: 20px;
+      font-size: 32px;
+    }
+    img.code-hipsters-logo {
+      margin: 0 auto;
+    }
+
+    .intro-text {
+      font-weight: 300;
+      font-size: 22px;
+      color: #3a3a3a;
+      font-family: 'Fira Sans';
+    }
+  }
+}
+
+.post-content {
+  img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // max-width: 130%;
+    // margin-left: -15%;
+  }
+}
+
+

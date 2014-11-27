@@ -118,8 +118,24 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    text-align: center;
+
+    .codehipsters-vk {
+      display: inline-block;
+      border: 2px solid #222;
+      padding: 10px 10px 8px 10px;
+      font-weight: 400;
+      font-family: 'Fira Sans';
+      font-size: 18px;
+      color: #333;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
 }
 
 .footer-heading {
@@ -207,6 +223,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    font-family: 'Lora';
 }
 
 .post-link {
@@ -271,3 +288,4 @@
         }
     }
 }
+
