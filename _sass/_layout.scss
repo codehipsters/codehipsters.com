@@ -2,12 +2,39 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    min-height: 65px;
+    background: #FF4254;
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    .header-wrapper {
+        max-width: 1200px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+}
+
+.site-logo {
+    width: 48px;
+    height: 60px;
+    background: url(images/ch-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 50px
+}
+
+.site-logo-text {
+    width: 300px;
+    height: 18px;
+    background: url(images/ch-logo-text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 110px
 }
 
 .site-title {
@@ -15,11 +42,10 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
-
+    text-transform: uppercase;
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
@@ -207,8 +233,19 @@
     }
 }
 
+.post-author {
+    margin-bottom: $spacing-unit;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #777777;
+}
+
 .post-content {
     margin-bottom: $spacing-unit;
+    font-family: 'Lora', serif;
+    font-size: 18px;
 
     h2 {
         font-size: 32px;

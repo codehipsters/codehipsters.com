@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Андрей Ситник о пост-процессинге CSS
+title: "Андрей Ситник: «Будущее за CSS постпроцессорами!»"
+author: Витя Суздалев
 ---
 Всем привет! Редакция [Code Hipsters](https://vk.com/codehipsters) поговорила с фронтендером [Evil Martians](https://evilmartians.com/) и автором [PostCSS](https://github.com/postCSS/postCSS) [Андреем Ситником](http://sitnik.ru/) о пре- и пост-процессинге CSS, трендах фронтент-разработки и планах на будущее.
 

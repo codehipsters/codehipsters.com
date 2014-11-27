@@ -8,6 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+a {
+    color: #ee6e83;
+}
 
 
 /**
@@ -80,7 +83,9 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -89,11 +94,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #ee6e83;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: #ee6e83;
     }
 
     &:hover {
