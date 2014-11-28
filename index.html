@@ -1,31 +1,32 @@
 ---
-layout: main-page
+layout: default
 ---
-
-
-<div class="home">
-
-<!--   <div class="intro-container">
+<div class="main-page-header">
+  <div class="intro-container">
     <img class="code-hipsters-logo" src="{{ 'images/code-hipsters-logo.svg' | prepend: site.baseurl}}"></img>
 
     <h1>Что происходит?</h1>
     <p class="intro-text">
       Приветик! <b>Code Hipsters</b> — это тусовка<br> программистов-хипстеров и хипстеров-программистов.
     </p>
-  </div> -->
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.localized_date}}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-<!-- <p class="rss-subscribe">Нас можно читать <a href="{{ "/feed.xml" | prepend: site.baseurl }}">через RSS</a></p> -->
-
+  </div>
 </div>
+
+<div class="page-content">
+  <div class="wrapper">
+    <div class="home">
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.localized_date}}</span>
+
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
