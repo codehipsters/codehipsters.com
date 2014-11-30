@@ -2,31 +2,10 @@
  * Main page header
  */
 .main-page-header {
-    // height: 400px;
     width: 100%;
-    // background: url(images/main-page-1.jpg);
-    // background-size: cover;
-    // background-position-y: -140px;
     background: white;
-    border-bottom: 1px solid #FF4254;
-    margin-bottom: 20px;
+    // border-bottom: 1px solid #FF4254;
     position: relative;
-
-    &:after {
-        content: 'Блог';
-        display: block;
-        background: white;
-        color: #FF4254;
-        position: absolute;
-        bottom: -14px;
-        left: 50%;
-        text-align: center;
-        width: 90px;
-        margin-left: -45px;
-        padding: 3px 0px;
-        border-radius: 2px;
-        border: 1px solid #FF4254;
-    }
 }
 
 /**
@@ -302,6 +281,7 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        text-align: center;
     }
 }
 
@@ -314,6 +294,12 @@
 .post-link {
     display: block;
     font-size: 24px;
+    padding: 2px 15px;
+    &:hover {
+        color: white;
+        background-color: #ee6e83;
+        text-decoration: none;
+    }
 }
 
 
