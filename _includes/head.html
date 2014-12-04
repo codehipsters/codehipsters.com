@@ -5,6 +5,14 @@
 
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:image" content="{{ page.share_image | prepend: site.baseurl | prepend: site.url }}" />
+
+  <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="description" content="{{ page.description }}" />
+  <link rel="image_src" href="{{ page.share_image | prepend: site.baseurl | prepend: site.url }}" />
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
