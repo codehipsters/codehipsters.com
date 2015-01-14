@@ -4,7 +4,7 @@ title: "Федор Индутный, io.js и столовые приборы"
 author: Витя Суздалев
 description: Code Hipsters связались с Федором Индутным и распросили его про io.js.
 localized_date: 14 января 2015
-share_image: /images/sitnik-header.jpg
+share_image: /images/indutny-header.png
 ---
 [Code Hipsters](https://vk.com/codehipsters) связались с [Федором Индутным](https://blog.indutny.com/) из Яндекса и распросили его про [io.js](https://iojs.org/), поднявшего столько шума в конце прошлого года.
 
