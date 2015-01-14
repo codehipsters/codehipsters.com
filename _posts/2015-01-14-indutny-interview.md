@@ -2,12 +2,12 @@
 layout: post
 title: "Федор Индутный, io.js и столовые приборы"
 author: Витя Суздалев
-description: Code Hipsters связались с Федором Индутным и распросили его о форке node.js, о котором все говорят.
+description: Code Hipsters связались с Федором Индутным и распросили его про io.js, о котором все говорят.
 localized_date: 14 января 2015
 share_image: /images/sitnik-header.jpg
 published: false
 ---
-Соскучились по нам? [Code Hipsters](https://vk.com/codehipsters) связались с [Федором Индутным](https://blog.indutny.com/) из Яндекса и распросили его о [io.js](https://github.com/iojs/io.js), о котором все говорят.
+Соскучились по нам? [Code Hipsters](https://vk.com/codehipsters) связались с [Федором Индутным](https://blog.indutny.com/) из Яндекса и распросили его про [io.js](https://github.com/iojs/io.js), о котором все говорят.
 
 **Code Hipsters:** Добрый день, Федор! Об [io.js](https://github.com/iojs/io.js), наверное, все очевидные вопросы уже задали; можете объяснить для тех, кто все еще не понял, что на самом деле произошло?
 
