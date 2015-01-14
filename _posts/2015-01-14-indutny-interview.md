@@ -7,7 +7,7 @@ localized_date: 14 января 2015
 share_image: /images/sitnik-header.jpg
 published: false
 ---
-Соскучились по нам? [Code Hipsters](https://vk.com/codehipsters) связались с [Федором Индутным](https://blog.indutny.com/) из Яндекса и распросили его про [io.js](https://github.com/iojs/io.js), о котором все говорят.
+Соскучились по нам? [Code Hipsters](https://vk.com/codehipsters) связались с [Федором Индутным](https://blog.indutny.com/) из Яндекса и распросили его про [io.js](https://iojs.org/) [(репозиторий)](https://github.com/iojs/io.js), о котором все говорят.
 
 **Code Hipsters:** Добрый день, Федор! Об [io.js](https://github.com/iojs/io.js), наверное, все очевидные вопросы уже задали; можете объяснить для тех, кто все еще не понял, что на самом деле произошло?
 
@@ -81,4 +81,4 @@ published: false
 
 **Code Hipsters:** Спасибо за ваши ответы!
 
-**P.S.** io.js сегодня [добрался до релиза 1.0](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)! Поздравляем Федора и команду с достижением этой приятной отправной точки и желаем успехов!
+**P.S.** [io.js](https://iojs.org/) сегодня [добрался до релиза 1.0](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)! Поздравляем Федора и команду с достижением этой приятной отправной точки и желаем успехов!
