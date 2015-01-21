@@ -221,29 +221,8 @@
                 content: 'g';
             }
 
-            &.ok {
-                @include media-query($on-palm) {
-                    display: none;
-                }
-
-                &:before {
-                    content: 'o';
-                }
-
-                &:after {
-                    content: 'Читай нас в одноклассниках';
-                }
-
-                &:hover {
-
-                    &:before {
-                        content: '\e800';
-                    }
-
-                    &:after {
-                        content: 'Шутка, конечно';
-                    }
-                }
+            &.twitter:before {
+                content: 't'
             }
         }
     }
