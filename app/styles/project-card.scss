@@ -1,0 +1,38 @@
+@import './colors';
+
+.projects {
+  margin-bottom: 48px;
+}
+
+.projects__grid {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.project-card {
+  margin-right: 48px;
+}
+
+.project-card__thumb {
+  width: 200px;
+  height: 120px;
+
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  background-size: cover;
+}
+
+.project-card__name {
+  font-size: 18px;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 6px;
+  max-width: 240px;
+}
+
+.project-card__description {
+  color: $textGray;
+  font-size: 15px;
+  max-width: 300px;
+}

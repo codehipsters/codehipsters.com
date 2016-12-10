@@ -1,0 +1,57 @@
+@import './colors';
+
+.site__about-and-team {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.site__about {
+  width: 75%;
+  padding-right: 32px;
+}
+
+.site__team {
+  width: 25%;
+  align-self: center;
+}
+
+.site__postmark {
+  width: 220px;
+}
+
+.team__header {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 40px;
+  margin-bottom: 8px;
+}
+
+.site__postmark-label {
+  font-size: 13px;
+  margin-top: 6px;
+  color: $gray-600;
+}
+
+.team__member {
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+
+.about__header {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  color: $textGray;
+  font-size: 17px;
+}
+
+.about__link {
+  font-weight: 500;
+
+  color: $textGray;
+  border-bottom: 2px solid $textGray;
+  text-decoration: none;
+}

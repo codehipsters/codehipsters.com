@@ -1,0 +1,20 @@
+@import 'sanitize';
+@import './colors';
+
+// Add fancy text selection styles
+::selection {
+  color: white;
+  background-color: $pink;
+}
+
+.site {
+  font-family: Rubik, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Main site content centered and limited in width
+.site__content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 15px;
+}

@@ -1,0 +1,69 @@
+
+.banner {
+  height: 240px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: black;
+
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner__image,
+.banner__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// ---
+// Image layer
+// ---
+.banner__image {
+  background-color: black;
+  z-index: 13;
+
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+
+  // Little bit more than the height of container
+  height: 350px;
+  transition: transform 12s linear,
+    opacity 1s ease;
+}
+
+.banner__image--active {
+  opacity: 1.0;
+}
+
+.banner__image--zoom {
+  transform: scale(1.1, 1.1) translateY(-50px);
+}
+
+.banner__content {
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1337;
+}
+
+// ---
+// Logo and slogan
+// ---
+.banner__slogan {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.banner__logo-wrap {
+  text-align: center;
+  padding-top: 64px;
+  margin-bottom: 14px;
+}
