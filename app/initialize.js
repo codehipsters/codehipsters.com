@@ -1,5 +1,5 @@
 const images = [
-  './images/birth-venus.jpg',
+  '/images/birth-venus.jpg',
   'https://media.giphy.com/media/l41lSeYuUleD8vG2Q/giphy.gif',
   'http://i.giphy.com/3o6EhOYMhOTANYgHMk.gif'
 ]
