@@ -1,0 +1,40 @@
+extends layout.pug
+
+block content
+  //---
+  //- Banner
+  //---
+  .banner
+    .banner__image.banner__image--first
+    .banner__image.banner__image--second
+    .banner__content
+      .banner__logo-wrap
+        img.banner__logo(src='/images/ch-horiz-white.svg')
+      .banner__slogan
+        | Постмодерн умер, а веб — еще нет
+
+  .site__content
+    .site__about-and-team
+      .site__about
+        .about__header Кто такие Code Hipsters?
+        .about__text
+          p
+            | Код хипстеры — сообщество программистов и цифровых дизайнеров из Ростова-на-Дону. Мы исследуем зарождающиеся паттерны и стили эпохи ИТ-ренессанса и веб-модерна, а результаты изысканий публикуем в
+            = ' '
+            a.about__link(href='http://vk.com/codehipsters') социальных
+            = ' '
+            a.about__link(href='http://twitter.com/codehipsters') сетях
+            |  и
+            = ' '
+            a.about__link(href='http://telegram.me/codehipsters') Телеграме
+            | . Ищем новые идеи повсюду, от последних исследований в сфере искусственного интеллекта до Чинквеченто, ревущих двадцатых, комикс-культуры и рейв-движения.
+          p
+            | С радостью делимся опытом и новостями на конференциях и митапах. Чтобы делать запоминающиеся презентации и общаться с публикой, разработали
+            = ' '
+            a.about__link(href='http://ficus.io') ficus.io
+            | .
+      .site__team
+        img.site__postmark(src='/images/rails-club-sticker.png')
+        .site__postmark-label
+          | свои крестовые походы отмечаем
+          | выпуском тематических стикеров-марок.

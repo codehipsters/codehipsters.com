@@ -9,9 +9,8 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "brunch build --production && NODE_ENV=production node compile.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
     "autoprefixer": "^6.5.3",
@@ -20,7 +19,9 @@
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
     "javascript-brunch": "^2.0.0",
+    "mkdirp": "^0.5.1",
     "postcss-brunch": "^2.0.5",
+    "pug": "^2.0.0-beta6",
     "sanitize.css": "^4.1.0",
     "sass-brunch": "^2.7.0",
     "uglify-js-brunch": "^2.0.0"
