@@ -1,0 +1,16 @@
+/*
+ * Slogatto component
+ */
+
+.slogatto__word {
+  display: inline-block;
+}
+
+.slogatto__wrapper {
+  display: inline-block;
+  margin-right: 5px;
+  overflow: hidden;
+
+  // webkit hack
+  border: 1px solid transparent;
+}

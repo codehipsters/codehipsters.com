@@ -9,5 +9,5 @@ const images = [
 document.addEventListener('DOMContentLoaded', function () {
   // Init banner slideshow
   const bannerEl = document.querySelector('.banner')
-  bannerEl && new Banner(bannerEl, images)
+  bannerEl && new Banner(bannerEl, { images })
 })

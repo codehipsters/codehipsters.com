@@ -1,6 +1,8 @@
 import Velocity from 'velocity-animate'
 const { Image } = window
 
+import Slogatto from './slogatto'
+
 // Waits until the image is loaded
 const loadImage = (src, done) => {
   const image = new Image()
@@ -8,13 +10,21 @@ const loadImage = (src, done) => {
   image.src = src
 }
 
+const SLOGANS = [
+  'Постмодерн умер, а веб — еще нет',
+  'Подливаем смузи в ваш Virtual DOM с 2014',
+  'Табы или пробелы? Главное, чтобы ты хорошо учился!',
+  'Code Ergo Sum',
+  'Кладем усталость от джаваскрипта на лопатки и щекочем'
+]
+
 class Banner {
-  constructor (el, images) {
+  constructor (el, options = {}) {
     this.el = el
 
-    this.images = images
+    this.images = options.images || []
     this.imageIdx = 0
-    this.changeInterval = 4000
+    this.changeInterval = options.interval || 4000
 
     this.slides = [
       this.el.querySelector('.banner__image--first'),
@@ -22,13 +32,6 @@ class Banner {
     ]
 
     this.start()
-  }
-
-  changeSlogan () {
-    const sloganEl = this.el.querySelector('.banner__slogan')
-    if (!sloganEl) {
-      return
-    }
   }
 
   swapSlide () {
@@ -60,10 +63,28 @@ class Banner {
 
   start () {
     const logo = this.el.querySelector('.banner__logo')
-    logo && Velocity(logo, { opacity: 1 }, { duration: 300 })
 
-    this.changeSlogan()
-    setTimeout(this.swapSlide.bind(this), 500)
+    if (logo) {
+      Velocity(logo, { opacity: 0, translateY: 30, scale: 0.98 })
+      Velocity(logo, { opacity: 1, translateY: 0, scale: 1 }, {
+        easing: 'easeOutQuint',
+        duration: 2000 })
+    }
+
+    setTimeout(() => {
+      const sloganEl = this.el.querySelector('.banner__slogan')
+
+      if (sloganEl) {
+        this.slogatto = new Slogatto(sloganEl, {
+          slogans: SLOGANS,
+          interval: 6000
+        })
+
+        this.slogatto.start()
+      }
+
+      this.swapSlide()
+    }, 500)
   }
 }
 

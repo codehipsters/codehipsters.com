@@ -52,6 +52,7 @@
   font-size: 22px;
   font-weight: 500;
   color: white;
+  line-height: 1.05;
 
   max-width: 640px;
   margin: 0 auto;
@@ -65,4 +66,6 @@
 
 .banner__logo {
   opacity: 0;
+  max-width: 100%;
 }
+
