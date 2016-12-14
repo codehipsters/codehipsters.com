@@ -19,11 +19,17 @@
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
     "javascript-brunch": "^2.0.0",
+    "marked": "^0.3.6",
     "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
     "postcss-brunch": "^2.0.5",
     "pug": "^2.0.0-beta6",
     "sanitize.css": "^4.1.0",
     "sass-brunch": "^2.7.0",
     "uglify-js-brunch": "^2.0.0"
+  },
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "glob": "^7.1.1"
   }
 }
