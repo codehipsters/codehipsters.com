@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'media-queries';
 
 /**
  * Posts
@@ -16,6 +17,10 @@
   font-size: 38px;
   line-height: 1.1;
   letter-spacing: -1px;
+
+  @include breakpoint(sm) {
+    font-size: 32px;
+  }
 }
 
 .post__author {
@@ -23,6 +28,10 @@
   font-size: 18px;
   font-weight: 400;
   color: #777777;
+
+  @include breakpoint(sm) {
+    font-size: 16px;
+  }
 }
 
 .post__content {

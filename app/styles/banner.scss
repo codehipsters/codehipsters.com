@@ -1,3 +1,4 @@
+@import 'media-queries';
 
 .banner {
   height: 240px;
@@ -8,6 +9,10 @@
 
   background-size: cover;
   background-position: center center;
+
+  @include breakpoint(sm) {
+    height: 220px;
+  }
 }
 
 .banner__image,
@@ -19,9 +24,9 @@
   bottom: 0;
 }
 
-// ---
-// Image layer
-// ---
+/*
+ * Image layer
+ */
 .banner__image {
   background-color: black;
   z-index: 13;
@@ -42,26 +47,43 @@
 .banner__content {
   background-color: rgba(0,0,0,0.5);
   z-index: 1337;
+
+  padding: 14px 40px;
 }
 
-// ---
-// Logo and slogan
-// ---
+/*
+ * Logo and slogan
+ */
 .banner__slogan {
   text-align: center;
-  font-size: 22px;
   font-weight: 500;
   color: white;
   line-height: 1.05;
 
   max-width: 640px;
   margin: 0 auto;
+
+  font-size: 22px;
+
+  @include breakpoint(sm) {
+    font-size: 20px;
+  }
+
+  @include breakpoint(xs) {
+    font-size: 18px;
+  }
 }
 
 .banner__logo-wrap {
   text-align: center;
-  padding-top: 64px;
+  padding-top: 52px;
+
+  margin: 0 auto;
   margin-bottom: 14px;
+
+  @include breakpoint(xs) {
+    max-width: 400px;
+  }
 }
 
 .banner__logo {

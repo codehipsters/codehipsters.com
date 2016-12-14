@@ -1,18 +1,34 @@
-@import './colors';
+@import 'colors';
+@import 'media-queries';
 
 .site__about-and-team {
   display: flex;
   flex-flow: row nowrap;
+
+  @include breakpoint(xs) {
+    display: block;
+  }
 }
 
 .site__about {
   width: 75%;
   padding-right: 32px;
+
+  @include breakpoint(xs) {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 .site__team {
   width: 25%;
   align-self: center;
+
+  @include breakpoint(xs) {
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+  }
 }
 
 .site__postmark {
