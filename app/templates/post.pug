@@ -1,0 +1,28 @@
+extends layout.pug
+
+block content
+  //---
+  //- Banner
+  //---
+  .banner
+    .banner__image.banner__image--first
+    .banner__image.banner__image--second
+    .banner__content
+      .banner__logo-wrap
+        img.banner__logo(src='/images/ch-horiz-white.svg')
+      .banner__slogan
+        | Постмодерн умер, а веб — еще нет
+
+  .post
+    header.post__header
+      h1.post__title
+        = post.title
+
+      .post__meta
+        .post__author
+          = post.author
+          = ' · '
+          = post.localized_date
+
+    article.post__content
+      | !{post.content}
