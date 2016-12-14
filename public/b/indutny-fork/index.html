@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1.0, user-scalable=no"><meta name="description" content="Code Hipsters — сообщество программистов и цифровых дизайнеров из Ростова-на-Дону"><meta name="keywords" contet="code hipsters,кодохипстеры,код хипстеры,сообщество в ростове,ит-сообщество,митапы,смузи,братишки,фикус"><title>Фёдор Индутный, io.js и столовые приборы · Code Hipsters</title><!-- WARNING: for iOS 7, remove the width=device-width and height=device-height--><!-- attributes. See https://issues.apache.org/jira/browse/CB-4323--><meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"><link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"><link rel="stylesheet" href="/app.css"><script src="/app.js"></script><script>require('initialize');
+</script></head><body class="site"><div class="banner"><div class="banner__image banner__image--first"></div><div class="banner__image banner__image--second"></div><div class="banner__content"><div class="banner__logo-wrap"><img class="banner__logo" src="/images/ch-horiz-white.svg"></div><div class="banner__slogan">Постмодерн умер, а веб — еще нет</div></div></div><div class="post"><header class="post__header"><h1 class="post__title">Фёдор Индутный, io.js и столовые приборы</h1><div class="post__meta"><div class="post__author">Витя Суздалев · 14 января 2015</div></div></header><article class="post__content"><p><a href="https://vk.com/codehipsters">Code Hipsters</a> связались с <a href="https://blog.indutny.com/">Фёдором Индутным</a> из Яндекса и распросили его про <a href="https://iojs.org/">io.js</a>, поднявшего столько шума в конце прошлого года.</p>
+<p><img src="/images/indutny-header.png" alt=""></p>
+<p><strong>Code Hipsters:</strong> Добрый день, Фёдор! Об <a href="https://iojs.org/">io.js</a>, наверное, все очевидные вопросы уже задали; можете объяснить для тех, кто все еще не понял, что на самом деле произошло?</p>
+<p><strong>Фёдор Индутный:</strong> Произошло следующее: в октябре появился форк <a href="https://github.com/node-forward">node-forward</a>, поддерживаемый большей частью основной команды Node.js. Помимо более активной разработки, в нем так же происходило обсуждение проблем в сообществе и способов их решения. Главной идей можно назвать «Moving node forward». Причиной появления этого форка было недовольство скоростью релизов и разработки Node.js. Ожидаемым результатом был и является merge с оригинальным репозиторием и передача руководства над проектом от компании Joyent к Community (Open Governance).</p>
+<p>Репозиторий node-forward/node какое-то время был публичным, но в скором времени <em>Scott Hammond</em> (CEO компании Joyent) выразил свое недовольство использованием торговой марки Node.js и потребовал сделать форк приватным или переименовать его. Какое-то время репозиторий действительно был закрытым, однако это не было приемлемым как для меня, так и для некоторых других участников проекта. Мы ведь работали над Open Source проектом, а получалось, что весь код был доступен только ограниченному количеству людей, которых мы лично приглашали.</p>
+<p>Тем не менее, мы ожидали действий со стороны Joyent и продолжали работу в закрытом репозитории около месяца. Но в виду отсутствия движения со стороны Joyent и медленно протекающих и закрытых встреч Advisory Board я решил опубликовать наши наработки с другим именем проекта (<a href="https://github.com/iojs/io.js">io.js</a>) и посмотреть, как отреагирует сообщество.</p>
+<p><strong>Code Hipsters:</strong> Как вы думаете, почему новость о форке вызвала такой резонанс?</p>
+<p><strong>Фёдор Индутный:</strong> Реакция была ошеломляющей! На мой взгляд, многие увидели, что проект снова «набирает обороты», и у них появилось желание помочь. Активность в <a href="https://github.com/iojs/io.js">iojs/io.js</a> сейчас огромная. Сообщество обсуждает множество вопросов: от логотипов до кода. Technical Commitee проводит еженедельные публичные встречи, на которых обсуждаются обозначенные сообществом проблемы.</p>
+<p>Собственно, это вся история произошедшего.</p>
+<p><strong>Code Hipsters:</strong> Является ли io.js восстанием против тирании Joyent, и есть ли эта тирания?</p>
+<p><img src="/images/indutny-reaction-cite.png" alt=""></p>
+<p><strong>Фёдор Индутный:</strong> Я достаточно далек от «политики» и стараюсь не участвовать в дискуссиях об отношении Joyent к проекту.</p>
+<p><strong>Code Hipsters:</strong> Какую роль в io.js играете лично вы? Вдохновитель/руководитель/член команды? Какие личные планы связаны с проектом?</p>
+<p><strong>Фёдор Индутный:</strong> Я просто член команды. Руководство — не моя стихия.</p>
+<p><strong>Code Hipsters:</strong> Чем io.js будет отличаться от Node.js? На какие функциональные нововведения вы нацеливаетесь в первую очередь?</p>
+<p><strong>Фёдор Индутный:</strong> Главные отличия от Node.js — скорость разработки и релизов. Функционально проект будет совместим с joyent/node настолько, насколько это возможно.</p>
+<p><strong>Code Hipsters:</strong> Чем вы занимаетесь в Яндексе, много ли рабочего времени занимает node/io.js? Как компания относится к вашей активной опенсорсной деятельности?</p>
+<p><strong>Фёдор Индутный:</strong>  В Яндексе я занимаюсь разработкой различных инструментов-помощников для других программистов. io.js занимает огромное количество времени. К моей большой радости, руководство к этому относится очень положительно и отзывчиво.</p>
+<p><img src="/images/indutny-typewriter-cite.png" alt=""></p>
+<p><strong>Code Hipsters:</strong> Какие серверные JavaScript технологии и подходы, по вашему мнению, будут в тренде в 2015? С чем надо разбираться как можно скорее, чтобы не отстать?</p>
+<p><strong>Фёдор Индутный:</strong> Мне тяжело рассуждать о трендах, так как большую часть кода я пишу на «vanilla» JavaScript и C++. Возможно, в следующем году мы увидим активное использование iterators и promises, так как они будут работать без флагов командной строки в io.js</p>
+<p><strong>Code Hipsters:</strong> Будет ли io.js работать с ES6 по умолчанию, или включенными окажутся только какие-то части стандарта — те же генераторы?</p>
+<p><strong>Фёдор Индутный:</strong> Насчет ES6 — наша политика очень простая: если что-то начинает работать без флага в v8, оно будет работать без флага и у нас.</p>
+<p><strong>Code Hipsters:</strong> Какая функциональная фича первая в плане? В каком направлении сейчас движется io.js — новый стандарт языка по умолчанию, какие-то улучшения производительности или API?</p>
+<p><strong>Фёдор Индутный:</strong> Сейчас io.js движется в направлении релиза 1.0.0, после этого мы начнем работу над новыми вещами.</p>
+<p><strong>Code Hipsters:</strong> Низкая скорость релизов сама по себе не кажется достаточной причиной для форка; кроме режима принятия решений, какие проблемы в сообществе node.js встали наиболее остро в последнее время?</p>
+<p><strong>Фёдор Индутный:</strong> Низкая скорость релизов — это очень веская причина лично для меня.</p>
+<p><strong>Code Hipsters:</strong> Вы говорите, что большую часть времени пишете на чистом JavaScript; что, на ваш взгляд, является самым важным в ES6?</p>
+<p><strong>Фёдор Индутный:</strong> Мне очень нравятся iterators, WeakMap/WeakSet, destructuring.</p>
+<p><strong>Code Hipsters:</strong> Как вы относитесь к языкам, компилируемым в JavaScript? Почему не используете тот же CoffeeScript?</p>
+<p><strong>Фёдор Индутный:</strong> В целом, я не имею ничего против CoffeeScript и прочих языков. Мой любимый язык программирования — C, наверное, поэтому лично мне комфортнее работать с JavaScript. TypeScript мне кажется довольно интересным, но не думаю, что я буду использовать его в ближайшее время.</p>
+<p><strong>Code Hipsters:</strong> Очень большую часть дискуссий вокруг фронтенда, да и программирования в целом, занимает функциональный подход, FRP и все связанное. Как вы оцениваете перспективы FRP и того же <a href="https://baconjs.github.io/">bacon.js</a> на сервере?</p>
+<p><strong>Фёдор Индутный:</strong> О, функциональные языки программирования! Мне они очень нравятся, но опять таки C — мой фаворит. На мой взгляд, не имеет большого значения, на чем именно (или с использованием чего именно) написан серверный код. Все решает опыт и умение разработчика.</p>
+<p><strong>Code Hipsters:</strong> Научится ли серверный JavaScript варить кофе?</p>
+<p><strong>Фёдор Индутный:</strong> Кофе варить можно будет разве что в прямом смысле. Планов перехода на CoffeeScript нет.</p>
+<p><img src="/images/indutny-coffee-cite.png" alt=""></p>
+<p><strong>Code Hipsters:</strong> Под «варить кофе» я имел в виду настоящий кофе.</p>
+<p><strong>Фёдор Индутный:</strong> Есть целое сообщество, посвященное использованию Node.js с различной электроникой (arduino и т.п.). Думаю, кофе варить рано или поздно мы научимся :)</p>
+<p><strong>Code Hipsters:</strong> А нет ли планов перейти на Go?</p>
+<p><strong>Фёдор Индутный:</strong> Переход на Go не планируется :)</p>
+<p><strong>Code Hipsters:</strong> Спасибо за ваши ответы!</p>
+<p><strong>P.S.</strong> io.js сегодня <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md">добрался до релиза 1.0</a>! Поздравляем Фёдора и команду с достижением этой приятной отправной точки и желаем успехов!</p>
+</article></div><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter27264008 = new Ya.Metrika({
+                    id:27264008,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/27264008" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body></html>
