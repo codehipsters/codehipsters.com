@@ -19,6 +19,8 @@
     "brunch": "^2.0.0",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
+    "fs-extra": "^1.0.0",
+    "glob": "^7.1.1",
     "javascript-brunch": "^2.0.0",
     "marked": "^0.3.6",
     "mkdirp": "^0.5.1",
@@ -30,7 +32,6 @@
     "uglify-js-brunch": "^2.0.0"
   },
   "dependencies": {
-    "fs-extra": "^1.0.0",
-    "glob": "^7.1.1"
+    "velocity-animate": "^1.4.0"
   }
 }

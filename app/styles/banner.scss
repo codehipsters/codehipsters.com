@@ -32,16 +32,11 @@
 
   // Little bit more than the height of container
   height: 350px;
-  transition: transform 12s linear,
-    opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .banner__image--active {
   opacity: 1.0;
-}
-
-.banner__image--zoom {
-  transform: scale(1.1, 1.1) translateY(-50px);
 }
 
 .banner__content {
@@ -66,4 +61,8 @@
   text-align: center;
   padding-top: 64px;
   margin-bottom: 14px;
+}
+
+.banner__logo {
+  opacity: 0;
 }
