@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production && NODE_ENV=production node compile.js"
+    "build": "brunch build --production && NODE_ENV=production node compile.js",
+    "deploy": "git subtree push --prefix public origin gh-pages"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
