@@ -41,7 +41,7 @@ class Banner {
       const slides = this.slides
       const [previous, current] = slides
 
-      current.style = `background-image: url(${currentImage});`
+      current.style.backgroundImage = `url(${currentImage})`
 
       // slow appear
       Velocity(current, 'stop')
