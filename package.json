@@ -2,15 +2,24 @@
   "name": "codehipsters.com",
   "description": "codehipsters.com website",
   "author": "Code Hipsters",
-  "version": "0.0.1",
+  "version": "0.1.337",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/codehipsters/codehipsters.com.git"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "public",
+    "cname": "codehipsters.com",
+    "prep": [
+      "build"
+    ],
+    "post": [],
+    "noprompt": false
   },
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build --production && NODE_ENV=production node compile.js",
-    "deploy": "git subtree push --prefix public origin gh-pages"
+    "deploy": "gh-pages-deploy"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
@@ -20,6 +29,7 @@
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
     "fs-extra": "^1.0.0",
+    "gh-pages-deploy": "^0.4.2",
     "glob": "^7.1.1",
     "javascript-brunch": "^2.0.0",
     "marked": "^0.3.6",
