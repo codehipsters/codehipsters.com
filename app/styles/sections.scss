@@ -1,7 +1,118 @@
 @import 'colors';
 @import 'media-queries';
 
-.site__about-and-team {
+// ----
+// Base section
+// ----
+.section {
+  margin-bottom: 82px;
+}
+
+.section__header {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+// ----
+// Posts
+// ----
+.post-grid__row {
+  display: flex;
+  flex-flow: row nowrap;
+
+  @include breakpoint(xs) {
+    display: block;
+  }
+}
+
+.post-grid__item {
+  width: 33.3%;
+  padding: 0 32px;
+  margin-bottom: 64px;
+
+  &:first-child { padding-left: 0; }
+  &:last-child { padding-right: 0; }
+
+  @include breakpoint(xs) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.post-preview {
+}
+
+.post-preview__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.post-preview__title-text {
+  display: inline;
+  border-bottom: 5px solid #F4B6BF;
+
+  .post-preview--1 & { border-color: #F4B6BF; }
+  .post-preview--2 & { border-color: #FDFA49; }
+  .post-preview--3 & { border-color: #6EDDA4; }
+  .post-preview--4 & { border-color: #82bcff; }
+  .post-preview--5 & { border-color: #000000; }
+}
+
+.post-preview__date {
+  font-size: 13px;
+  color: $gray-800;
+  margin-bottom: 6px;
+}
+
+.post-preview__summary {
+  font-size: 14px;
+  color: $textGray;
+}
+
+// ---
+// Post stub
+// ---
+.post-stub {
+  height: 180px;
+  border-radius: 4px;
+
+  background-color: #F4B6BF;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(xs) {
+    height: 130px;
+  }
+}
+
+.post-stub__text-wrap {
+  text-align: center;
+  max-width: 65%;
+  line-height: 1.2;
+}
+
+.post-stub__text {
+  display: inline;
+  background-color: white;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 3px;
+}
+
+// ----
+// About section
+// ----
+.section.section--about {
   display: flex;
   flex-flow: row nowrap;
 
@@ -12,7 +123,7 @@
 
 .site__about {
   width: 75%;
-  padding-right: 32px;
+  padding-right: 58px;
 
   @include breakpoint(xs) {
     width: 100%;
@@ -46,6 +157,7 @@
   font-size: 13px;
   margin-top: 6px;
   color: $gray-600;
+  padding: 0 12px;
 }
 
 .team__member {

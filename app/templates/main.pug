@@ -14,9 +14,13 @@ block content
       .banner__slogan
 
   .site__content
-    .site__about-and-team
+
+    //---
+    //- About section
+    //---
+    .section.section--about
       .site__about
-        .about__header Кто такие Code Hipsters?
+        .section__header Кто такие Code Hipsters?
         .about__text
           p
             | Код хипстеры — сообщество программистов и цифровых дизайнеров из Ростова-на-Дону. Мы исследуем зарождающиеся паттерны и стили эпохи ИТ-ренессанса и веб-модерна, а результаты изысканий публикуем в
@@ -36,5 +40,60 @@ block content
       .site__team
         img.site__postmark(src='/images/rails-club-sticker.png')
         .site__postmark-label
-          | свои крестовые походы отмечаем
+          | свои крестовые походы на конференции отмечаем
           | выпуском тематических стикеров-марок.
+
+    //---
+    //- Blog section
+    //---
+    .section.section--posts
+      .section__header
+        | Мы пишем в блог
+
+      .section__content
+        .post-grid__row
+          .post-grid__item
+            .post-stub
+              .post-stub__text-wrap: .post-stub__text Поучительная история со счастливым концом
+
+          .post-grid__item
+            .post-preview.post-preview--1
+              a.post-preview__title(href="https://medium.com/@mlfrg/rules-of-parsing-dates-with-date-parse-c5a73525a72e")
+                .post-preview__title-text Rules of parsing dates with Date.parse
+              .post-preview__date 30 ноября 2016
+              .post-preview__summary
+                | Поучительная история со счастливым концом.
+
+          .post-grid__item
+            .post-preview.post-preview--2
+              a.post-preview__title(href="https://medium.com/@kadmil/promised-way-to-async-flows-with-redux-43977eef9f46#.uz7fga7tde")
+                .post-preview__title-text Promised way to async flows with Redux
+              .post-preview__date 30 мая 2016
+              .post-preview__summary
+                | Интервью с автором самого провокационного форка 2014 года.
+
+        .post-grid__row
+          .post-grid__item
+            .post-preview.post-preview--3
+              a.post-preview__title(href="https://medium.com/@kadmil/css-modules-to-the-rescue-jsx-ded2db874d34#.x44q7dy52")
+                .post-preview__title-text CSS Modules to the rescue.jsx
+              .post-preview__date 9 мая 2016
+              .post-preview__summary
+                | Интервью с автором самого провокационного форка 2014 года.
+
+          .post-grid__item
+            .post-preview.post-preview--4
+              a.post-preview__title(href="/b/indutny-fork/")
+                .post-preview__title-text Фёдор Индутный, io.js и столовые приборы
+              .post-preview__date 14 января 2015
+              .post-preview__summary
+                | Интервью с автором самого провокационного форка 2014 года.
+
+          .post-grid__item
+            .post-preview.post-preview--5
+              a.post-preview__title(href="/b/sitnik/")
+                .post-preview__title-text Андрей Ситник: «Будущее за CSS постпроцессорами!»
+              .post-preview__date 27 ноября 2014
+              .post-preview__summary
+                | Поговорили с создателем PostCSS о трендах CSS-процессинга.
+
