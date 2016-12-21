@@ -1,4 +1,5 @@
 import Banner from 'components/banner'
+import Poissonator from 'components/poissonator'
 
 const images = [
   '/images/birth-venus.jpg',
@@ -11,3 +12,4 @@ document.addEventListener('DOMContentLoaded', function () {
   const bannerEl = document.querySelector('.banner')
   bannerEl && new Banner(bannerEl, { images })
 })
+

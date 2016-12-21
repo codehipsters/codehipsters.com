@@ -48,13 +48,17 @@ block content
     //---
     .section.section--posts
       .section__header
-        | Мы пишем в блог
+        | Пишем
 
       .section__content
         .post-grid__row
           .post-grid__item
             .post-stub
-              .post-stub__text-wrap: .post-stub__text Поучительная история со счастливым концом
+
+              //-.post-stub__poisson-wrap
+              //-  canvas.post-stub__poisson(width="600" height="400")
+              .post-stub__text-wrap: .post-stub__text Иногда нужной статьи не найти в интернете и приходится писать ее самим
+
 
           .post-grid__item
             .post-preview.post-preview--1
@@ -66,11 +70,11 @@ block content
 
           .post-grid__item
             .post-preview.post-preview--2
-              a.post-preview__title(href="https://medium.com/@kadmil/promised-way-to-async-flows-with-redux-43977eef9f46#.uz7fga7tde")
+              a.post-preview__title(href="https://medium.com/@kadmilpromised-way-to-async-flows-with-redux-43977eef9f46#.uz7fga7tde")
                 .post-preview__title-text Promised way to async flows with Redux
               .post-preview__date 30 мая 2016
               .post-preview__summary
-                | Интервью с автором самого провокационного форка 2014 года.
+                | Рассказываем, как просто начать работать с асинхронными действиями в Редаксе.
 
         .post-grid__row
           .post-grid__item
@@ -79,7 +83,7 @@ block content
                 .post-preview__title-text CSS Modules to the rescue.jsx
               .post-preview__date 9 мая 2016
               .post-preview__summary
-                | Интервью с автором самого провокационного форка 2014 года.
+                |  Настраиваем цсс-модули на вебпаке и попутно рассказываем, зачем это делать.
 
           .post-grid__item
             .post-preview.post-preview--4
@@ -87,7 +91,7 @@ block content
                 .post-preview__title-text Фёдор Индутный, io.js и столовые приборы
               .post-preview__date 14 января 2015
               .post-preview__summary
-                | Интервью с автором самого провокационного форка 2014 года.
+                |  Интервью по горячим следам форка Node.js в 2014.
 
           .post-grid__item
             .post-preview.post-preview--5
@@ -95,5 +99,5 @@ block content
                 .post-preview__title-text Андрей Ситник: «Будущее за CSS постпроцессорами!»
               .post-preview__date 27 ноября 2014
               .post-preview__summary
-                | Поговорили с создателем PostCSS о трендах CSS-процессинга.
+                | Познакомились с Ситником и разобрались с ПостЦсс до того, как это стало мейнстримом.
 
